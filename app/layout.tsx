@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'لاک | ماشین‌حساب صوتی',
+  description: 'ماشین‌حساب صوتی لاک — با صدا به فارسی و انگلیسی حساب کن و جواب را بشنو',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -39,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="fa" dir="rtl">
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
